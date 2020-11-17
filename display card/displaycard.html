@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      *{
+        margin:0;
+        padding:0;
+      }
+
+      .container .card{
+        position:relative;
+        margin:10px;
+        width:300px;
+        height:430px;
+        border-radius:20px;
+        overflow:hidden;
+        box-shadow: 0 15px 15px grey;
+      }
+      .container .card .image{
+        position:absolute;
+        width:300px;
+        height:235px;
+      }
+      .container .card .content{
+        position:absolute;
+        bottom:0;
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        text-align:center;
+        width:300px;
+        height:195px;
+        transition:0.9s ease-in-out;
+        background:white;
+        display:inline-block;
+        border-radius:15px;
+      }
+
+      .container .card .image img{
+        width:300px;
+        height:265px;
+      }
+      .container .card .content h2{
+        background:black;
+        color:white;
+      }
+      .container .card .content p{
+        margin-top:14px;
+        margin-left:20px;
+        margin-right:20px;
+        text-align:justify;
+      }
+      .container .card .date{
+        position:absolute;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        bottom:0;
+        right:27px;
+        background:#f1c40f;
+        padding:0 12px;
+        z-index: 9999;
+      }
+      .container .card .addinfo{
+        position:absolute;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        height:100px;
+        width:300px;
+        top:0;
+        left:0;
+        background:grey;
+        color:white;
+        transform: translateY(-100%);
+        transition:0.5s;
+        opacity:.7;
+
+      }
+      .container .card:hover .addinfo{
+        transform: translateY(0%);
+      }
+      .container .card .button{
+        position:absolute;
+        display:inline-block;
+        bottom:20px;
+        left:20px;
+        border-radius:5px;
+        z-index: 9999;
+      }
+
+      .container .card .button a{
+        text-decoration:none;
+        border-radius:10px;
+        padding:10px 25px;
+        background:#009688;
+        color:white;
+      }
+      .container .card .button a:hover{
+        background:black;
+      }
+      .transp{
+        position:absolute;
+        opacity: .7;
+        background:linear-gradient(#fffbfbcc,#7f7c7c91,#525050fc );
+        bottom: 0;
+        width:300px;
+        height: 80px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="image">
+          <img src="img.jpg" alt="">
+        </div>
+        <div class="content">
+          <h2>TITLE</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua V ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occae</p>
+        </div>
+
+        <div class="addinfo">
+          <h4>By:name</h4>
+          <h4>word:xxx</h4>
+        </div>
+        <div class="transp"></div>
+        <span class="button"><a href="#">READ</a></span>
+        <span class="date">
+          <span>01</span>
+          <span>JAN</span>
+          <span>2000</span>
+        </span>
+        </div>
+
+    </div>
+  </body>
+</html>
